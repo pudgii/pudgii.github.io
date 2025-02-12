@@ -4,8 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #081b29;
+            color: #ffffff;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: yellowgreen;
+            color: #ffffff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .navbar a:hover, .active {
+            color: #000000;
+        }
+        .logo {
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            text-align: left;
+            padding: 0 10%;
+        }
+        .home-content {
+            max-width: 600px;
+        }
+        .home-content h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        .home-content h1 span {
+            color: yellowgreen;
+        }
+        .home-content h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .home-content p {
+            font-size: 1.1em;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: yellowgreen;
+            color: #000000;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        .profile-img {
+            width: 300px;
+            border-radius: 20px;
+            margin-left: 50px;
+        }
+        .contact {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .contact a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #00abf0;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -17,24 +115,21 @@
         </nav>
     </header>
     <section class="home">
-        <div>
-            <img src="try/profile.jpg.jpg" alt="" class="img">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Jun</span></h1>
+            <h3>Videographer | Video Editor | PC Builder</h3>
+            <p>I’ve studied Java and Python as my basic programming languages. I also have experience in video editing and videography. My passion is building PCs, and I’m excited to keep learning and exploring new skills!</p>
+            <div class="buttons">
+                <a href="#">Contact Me!</a>
+                <a href="#">Hire Me!</a>
+            </div>
+            <div class="contact">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxs-phone'></i></a>
+            </div>
         </div>
-        <h1 class="port">Hi, I'm</h1>
-        <h1 class="folio">Jun</h1>
-        <div>
-            <h3 class="intro2">Videographer | Video Editor | PC Builder </h3>
-            <h4 class="intro3">I’ve studied Java and Python as my basic programming languages. I also have experience in video editing and videography. My passion is building PCs, and I’m excited to keep learning and exploring new skills!"</h4>
-        </div>
-        <div>
-            <a href="#" class="btn1"> Contact Me!</a>
-            <a href="#" class="btn2">Hire Me!</a>
-        </div>
-        <div class="contact">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-            <a href=""><i class='bx bxs-phone' ></i></a>
-        </div>
+        <img src="https://github.com/pudgii/profile.jpg" alt="Profile Picture" class="profile-img">
     </section>
 </body>
 </html>
