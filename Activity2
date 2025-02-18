@@ -15,7 +15,7 @@
         </ul>
     </header>
 
-    <img src="try/profile.jpg" alt="I am an image and I'm all by myself">
+    <img src="profile.jpg" alt="I am an image and I'm all by myself">
 
     <div class="page-content">
         <h1>Hello! I am a text with the largest heading</h1>
