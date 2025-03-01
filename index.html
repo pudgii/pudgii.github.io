@@ -39,12 +39,11 @@
             font-size: 25px;
         }
 
-        /* Main content section */
         .home {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            flex-wrap: wrap;
             height: 90vh;
             text-align: left;
             padding: 0 10%;
@@ -55,7 +54,6 @@
         }
         .home-content h1 {
             font-size: 3.5em;
-            margin: 0;
         }
         .home-content h1 span {
             color: yellowgreen;
@@ -87,7 +85,6 @@
             margin-right: 10px;
         }
         
-        /* Profile Image */
         .profile-img {
             width: 300px;
             border-radius: 20px;
@@ -95,7 +92,6 @@
             flex-shrink: 0;
         }
 
-        /* Social Media Links */
         .contact {
             margin-top: 20px;
             display: flex;
@@ -114,60 +110,30 @@
             text-decoration: none;
         }
 
-        /* 🔹 Responsive Design 🔹 */
-        @media (max-width: 1024px) {
-            .home {
-                flex-direction: column;
-                text-align: center;
-                height: auto;
-                padding: 50px 10%;
-            }
-            .home-content {
-                max-width: 100%;
-            }
-            .profile-img {
-                width: 250px; /* Reduce size for tablets */
-                margin: 20px 0;
-            }
+        .website-section {
+            text-align: center;
+            padding: 50px 10%;
+            background-color: #0a2a3f;
         }
-        
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                text-align: center;
-            }
-            .navbar {
-                margin-top: 10px;
-            }
-            .home-content h1 {
-                font-size: 3em;
-            }
-            .home-content h3 {
-                font-size: 1.3em;
-            }
-            .profile-img {
-                width: 220px; /* Smaller image on phones */
-            }
+        .website-section h2 {
+            font-size: 2.5em;
+            color: yellowgreen;
         }
-
-        @media (max-width: 480px) {
-            .home-content h1 {
-                font-size: 2.5em;
-            }
-            .home-content h3 {
-                font-size: 1.2em;
-            }
-            .home-content p {
-                font-size: 1em;
-            }
-            .buttons a {
-                width: 130px;
-                height: 45px;
-                font-size: 16px;
-            }
-            .profile-img {
-                width: 200px;
-            }
+        .website-section p {
+            font-size: 1.2em;
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+        .website-section a {
+            display: inline-block;
+            background: yellowgreen;
+            color: #000;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -196,6 +162,13 @@
             </div>
         </div>
         <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+    </section>
+    <section class="website-section">
+        <h2>Check Out My Work!</h2>
+        <p>Visit my website to see more about my projects, experiences, and skills.</p>
+        <a href="https://pudgii.github.io/subject.github.io/" target="_blank">Check My Courses</a>
+        <a href="https://pudgii.github.io/activity2.github.io/" target="_blank">Basic Structure</a>
+        <a href="https://pudgii.github.io/activity3.github.io/" target="_blank">CSS Styling</a>
     </section>
 </body>
 </html>
